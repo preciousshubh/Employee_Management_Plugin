@@ -1,0 +1,192 @@
+.add-employee-button,
+.view-employee-button {
+  margin-top: 20px;
+  float: right;
+  margin-right: 50px;
+}
+
+.add-employee-button a,
+.view-employee-button a {
+  text-decoration: none;
+  color: white; /* Ensure text color is white */
+  background-color: #0073aa;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 14px;
+  display: inline-block;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Ensure the pagination list is displayed in a row */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Remove default padding */
+  margin: 0; /* Remove default margin */
+}
+
+.bootpag {
+  display: flex;
+  list-style: none; /* Remove default list styling */
+  padding: 0;
+  margin: 0;
+}
+
+.bootpag li {
+  margin: 0 5px; /* Space between pagination items */
+}
+
+.bootpag a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #007bff; /* Link color */
+  border: 1px solid #dee2e6; /* Border styling */
+  border-radius: 4px; /* Rounded corners */
+  transition: background-color 0.2s, color 0.2s; /* Smooth transition for hover effects */
+}
+
+.bootpag .disabled a {
+  color: #6c757d; /* Disabled link color */
+  pointer-events: none; /* Disable clicking on disabled items */
+}
+
+.bootpag .active a {
+  background-color: #007bff; /* Active link background color */
+  color: #fff; /* Active link text color */
+  border-color: #007bff; /* Active link border color */
+}
+
+.bootpag .prev a,
+.bootpag .next a {
+  font-weight: bold; /* Make previous/next links bold */
+}
+
+.container {
+  display: flex;
+}
+
+/* .add-employee-button {
+  display: flex;
+  align-items: center;
+} */
+
+/* .container {
+  display: flex;
+  justify-content: flex-end; 
+  align-items: center; 
+} */
+
+.add-employee-button {
+  display: flex;
+  align-items: center;
+}
+
+.add-employee-link {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 15px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-right: 10px; /* Space between button and search form */
+}
+
+.search-form {
+  display: flex; /* Align form elements in a row */
+}
+
+.search-form input {
+  border-radius: 0; /* Remove border-radius to match button edges */
+  border-right: 0; /* Remove right border to connect with button */
+}
+
+.search-form button {
+  border-radius: 0; /* Remove border-radius to match input field edges */
+  padding: 10px 15px;
+  background-color: #6c757d;
+  color: #fff;
+  border: 1px solid #6c757d;
+}
+.boot .add-employee-button a:hover,
+.view-employee-button a:hover {
+  text-decoration: none;
+  background-color: #005177;
+  color: white; /* Keep text color white on hover */
+}
+.search-form {
+  display: flex; /* Use Flexbox inside the form */
+  align-items: center; /* Center items vertically */
+  margin: 0; /* Remove default margins */
+}
+
+.search-form input {
+  margin-right: 5px; /* Space between input and button */
+  padding: 5px; /* Add padding to the input field */
+}
+
+.search-form button {
+  padding: 5px 10px; /* Add padding to the button */
+  border: 1px solid #ccc; /* Border for the button */
+  background-color: #007bff; /* Button background color */
+  color: white; /* Button text color */
+  cursor: pointer; /* Cursor on hover */
+}
+
+/* Ensure the container's width is sufficient */
+.add-employee-button,
+.search-form {
+  width: auto; /* Adjust width to fit content */
+}
+/* Ensure the container takes full viewport height */
+
+/* Full height and center content horizontally and vertically */
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Optional: Add some padding around the form */
+.form-width {
+  padding: 20px;
+  width: 600px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+.pagination-container {
+  text-align: right; /* Aligns the pagination container to the right */
+}
+
+.pagination {
+  display: inline-block; /* Makes the pagination container fit its content */
+}
+
+.page-item {
+  display: inline; /* Ensures pagination items are inline */
+  margin-left: 5px; /* Adds spacing between pagination items */
+}
+
+.page-item.active {
+  font-weight: bold; /* Optional: highlight the current page */
+}
+
+.page-item a {
+  color: #007cba; /* Customize the color of pagination links */
+  text-decoration: none; /* Remove underline from links */
+}
+
+.page-item a:hover {
+  text-decoration: underline; /* Optional: underline on hover */
+}
+
+.tablenav .status-links {
+  display: none;
+}
+
+.assign-btn {
+  color: white;
+  text-decoration: none;
+}
