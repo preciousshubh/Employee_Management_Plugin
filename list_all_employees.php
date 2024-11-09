@@ -402,9 +402,7 @@ class list_of_all_employees extends WP_List_Table
             View Task
             </button>
             ';
-            // echo "<pre>";
-            // print_r($task_descriptions);
-            // echo "</pre>";
+
 
             include_once(plugin_dir_path(__FILE__) . 'html/column_assign_task_view_button.php');
             return $button;
@@ -421,52 +419,4 @@ class list_of_all_employees extends WP_List_Table
             return $button;
         }
     }
-    // public function column_assign_task($employee)
-    // {
-    //     global $wpdb;
-    //     $table_name = $wpdb->prefix . 'manage_task';
-    //     $emp_id = $employee['id'];
-    //     $emp_name = $employee['emp_name'];
-    //     $sql = $wpdb->prepare("SELECT * FROM {$table_name} WHERE `emp_id`=%d", $emp_id);
-    //     $result = $wpdb->get_row($sql, ARRAY_A);
-    //     //print_r($result);
-    //     if ($result) {
-
-    //         $task_name = $result['task_name'];
-    //         $task_descriptions = $result['task_description'];
-    //         $data = array(
-    //             'task_name' => $task_name,
-    //             'task_description' => $task_descriptions
-    //         );
-    //         $data_json_encode = json_encode($data);
-    //         print_r($data_json_encode);
-    //         $button = '<button type="button" class="btn btn-primary view-modal-btn"
-    //         data-emp-id="' . $employee['id'] . '"
-    //         data-emp-name="' . $employee['emp_name'] . '"
-    //         data-task-name="' . $task_name . '"
-    //         data-task-description="' . $task_descriptions . '"
-    //         data-toggle="modal"
-    //         data-target="#viewTaskModal">
-    //         View Task
-    //         </button>
-    //         ';
-    //         // echo "<pre>";
-    //         // print_r($task_descriptions);
-    //         // echo "</pre>";
-
-    //         include_once(plugin_dir_path(__FILE__) . 'html/column_assign_task_view_button.php');
-    //         return $button;
-    //     } else {
-
-    //         $button = '<button type="button" class="btn btn-primary open-modal-btn"
-    //         data-emp-id="' . $employee['id'] . '"
-    //         data-emp-name="' . $employee['emp_name'] . '"
-    //         data-toggle="modal"
-    //         data-target="#assignTaskModal">
-    //         Assign Task
-    //         </button>';
-    //         include_once(plugin_dir_path(__FILE__) . 'html/column_assign_task_assign_button.php');
-    //         return $button;
-    //     }
-    // }
 }
