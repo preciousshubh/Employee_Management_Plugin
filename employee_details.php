@@ -353,50 +353,6 @@ class EmployeeDetails
 
 
 
-    // public function handle_add_task()
-    // {
-    //     if (!isset($_POST['nonce']) && !wp_verify_nonce($_POST['nonce'], 'add_new_employee_nonce')) {
-    //         wp_send_json_error(['message' => 'Invalid security token.']);
-    //         return;
-    //     }
-
-    //     parse_str($_POST['formData'], $form_data);
-
-    //     // Retrieve form fields
-    //     $employee_id = isset($form_data['employee_id']) ? intval($form_data['employee_id']) : 0;
-    //     $task_name = isset($form_data['task_name']) ? sanitize_text_field($form_data['task_name']) : '';
-    //     $task_descriptions = isset($form_data['task_description']) ? array_map('sanitize_textarea_field', $form_data['task_description']) : [];
-
-
-    //     // Validate form data
-    //     if (empty($task_name) || empty($task_descriptions) || !array_filter($task_descriptions)) {
-    //         wp_send_json_error(['message' => 'All fields are required and at least one task description must be provided.']);
-    //         wp_die();
-    //     }
-    //     global $wpdb;
-    //     $table_prefix = $wpdb->prefix;
-    //     $table_name = $table_prefix . 'manage_task';
-
-
-    //     $data = [
-    //         'emp_id' => $employee_id,
-    //         'task_name' => $task_name,
-    //         'task_description' => serialize($task_descriptions), // Serialize if storing as a string
-    //         'created_at' => current_time('mysql')
-    //     ];
-
-
-    //     $query = $wpdb->insert($table_name, $data);
-
-
-    //     if ($query !== false) {
-    //         wp_send_json_success(['message' => 'Task added successfully.']);
-    //     } else {
-    //         wp_send_json_error(['message' => "Task Not Assigned: " . $wpdb->last_error]);
-    //     }
-
-    //     wp_die();
-    // }
 
     public function handle_add_task()
     {
@@ -420,9 +376,7 @@ class EmployeeDetails
         }
 
 
-        // if (is_array($task_descriptions)) {
-        //     wp_send_json_error('');
-        // }
+    
 
         global $wpdb;
         $table_prefix = $wpdb->prefix;
